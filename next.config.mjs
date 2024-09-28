@@ -16,4 +16,4 @@ const nextConfig = {
 };
 
 // export default withMDX(nextConfig);
-module.exports = nextConfig;
+export default nextConfig;
