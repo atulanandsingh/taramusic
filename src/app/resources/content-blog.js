@@ -7,15 +7,15 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Music Production',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/New Delhi',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Asia/Kolkata',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Hindi']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    title: <>Subscribe to {person.firstName} {person.lastName}'s Newsletter</>,
+    description: <>We occasionally write about music prodcution, video editing, and share thoughts on the intersection of creativity and music.</>
 }
 
 const social = [
@@ -24,12 +24,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/atulanandsingh',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/atulanandgbpec/',
     },
     {
         name: 'X',
@@ -47,13 +47,13 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Tara, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive user experiences. After hours, I build my own projects.</>
+    headline: <>Music Production</>,
+    subline: <>We'are Tara Music, a music production company at <InlineCode>NEW DELHI</InlineCode>, where we craft intuitive music experiences.</>
 }
 
 const about = {
     label: 'About',
-    title: 'About me',
+    title: 'About Us',
     description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: false,
@@ -71,7 +71,7 @@ const about = {
         title: 'Introduction',
         description: 
         <>
-            <p>Tara is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</p>
+            <p>Tara Music is a New Delhi-based music production company with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</p>
             <p>My work spans a diverse range of disciplines, from crafting <Link href="/work">intuitive digital interfaces</Link> to designing immersive interactive experiences. I’m particularly interested in the intersection of design and engineering, where aesthetics meet functionality. I believe that the best solutions arise from a balance of creativity and technical rigor, and I enjoy the challenge of finding that balance in every project I undertake.</p>
         </>
     },
